@@ -1,311 +1,22 @@
 <!doctype html>
-<html lang="es-ES">
+<html lang="es" data-visualize-standalone>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="referrer" content="no-referrer">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data: https://persistent.oaistatic.com/plugins/visualize/charts/ https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src 'unsafe-inline' blob: data: https://persistent.oaistatic.com/plugins/visualize/charts/ https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://persistent.oaistatic.com/plugins/visualize/charts/ https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://persistent.oaistatic.com/plugins/visualize/charts/ https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://persistent.oaistatic.com/plugins/visualize/charts/ https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
-<title>determinantes.html</title>
-<style>:root{color-scheme:light dark;background:light-dark(rgb(255 255 255), rgb(24 24 24))}html,body{margin:0}body{box-sizing:border-box;padding:1rem;background:inherit}iframe{display:block;width:100%;max-width:736px;height:calc(100vh - 2rem);margin:0 auto;border:0}</style>
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src 'unsafe-inline' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Determinantes y rangos · 2.º de Bachillerato</title>
+<style>:root{color-scheme:light dark;background:light-dark(rgb(255 255 255), rgb(24 24 24))}html,body{margin:0}body{box-sizing:border-box;padding:1rem;background:inherit}iframe{display:block;width:100%;height:calc(100vh - 2rem);margin:0 auto;border:0}</style>
 </head>
 <body>
-<iframe id="codex-visualization" sandbox="allow-scripts" scrolling="no" referrerpolicy="no-referrer" title="determinantes.html" data-srcdoc="&lt;!doctype html&gt;
-&lt;html lang=&quot;es-ES&quot;&gt;
+<iframe id="codex-visualization" sandbox="allow-scripts" referrerpolicy="no-referrer" title="Determinantes" data-srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;es&quot; data-visualize-standalone&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot;&gt;
 &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
 &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
-&lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27; &#x27;unsafe-eval&#x27; &#x27;wasm-unsafe-eval&#x27; blob: data: https://persistent.oaistatic.com/plugins/visualize/charts/ https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src &#x27;unsafe-inline&#x27; blob: data: https://persistent.oaistatic.com/plugins/visualize/charts/ https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://persistent.oaistatic.com/plugins/visualize/charts/ https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://persistent.oaistatic.com/plugins/visualize/charts/ https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://persistent.oaistatic.com/plugins/visualize/charts/ https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src &#x27;none&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;&quot;&gt;
-&lt;title&gt;determinantes.html&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;script type=&quot;application/json&quot; id=&quot;codex-visualization-widget-state&quot;&gt;__CODEX_VISUALIZATION_WIDGET_STATE__&lt;/script&gt;
-&lt;script&gt;(() =&gt; {
-  const root = document.documentElement;
-  const mediaQuery = globalThis.matchMedia(&quot;(prefers-color-scheme: dark)&quot;);
-  const apply = Reflect.apply;
-  const isArray = Array.isArray;
-  const hasOwn = Object.hasOwn;
-  const parentWindow = globalThis.parent;
-  const stringify = JSON.stringify;
-  const parse = JSON.parse;
-  const encode = TextEncoder.prototype.encode.bind(new TextEncoder());
-  const initialStateElement = document.getElementById(
-    &quot;codex-visualization-widget-state&quot;,
-  );
-  const initialGlobals = parse(initialStateElement?.textContent ?? &quot;{}&quot;);
-  initialStateElement?.remove();
-  /** @type {Record&lt;string, unknown&gt; | null} */
-  let state = initialGlobals.widgetState ?? null;
-  const statePersistence = initialGlobals.statePersistence ?? &quot;none&quot;;
-  let nextStateRequestId = 0;
-  /** @type {Map&lt;number, { resolve: () =&gt; void; reject: (error: Error) =&gt; void; timeout: ReturnType&lt;typeof globalThis.setTimeout&gt;; serializedState: string }&gt;} */
-  const pendingStateWrites = new Map();
-  const persistenceError = () =&gt;
-    Object.assign(
-      new Error(&quot;The host could not persist the widget state update&quot;),
-      {
-        code: -32000,
-        data: { code: &quot;widget_state_persistence_failed&quot;, retryable: false },
-      },
-    );
-  /**
-   * @param {object} prototype
-   * @param {string} property
-   */
-  const getPrototypeGetter = (prototype, property) =&gt; {
-    // oxlint-disable-next-line typescript/unbound-method -- invoked through captured Reflect.apply
-    const getter = Object.getOwnPropertyDescriptor(prototype, property)?.get;
-    if (getter == null) {
-      throw new Error(`Missing ${property} getter`);
-    }
-    return getter;
-  };
-  const getMessageData = getPrototypeGetter(MessageEvent.prototype, &quot;data&quot;);
-  const getMessagePorts = getPrototypeGetter(MessageEvent.prototype, &quot;ports&quot;);
-  const getMessageSource = getPrototypeGetter(MessageEvent.prototype, &quot;source&quot;);
-  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
-  const addHostMessageListener = MessagePort.prototype.addEventListener;
-  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
-  const postHostMessage = MessagePort.prototype.postMessage;
-  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
-  const startHostPort = MessagePort.prototype.start;
-  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
-  const stopMessagePropagation = Event.prototype.stopImmediatePropagation;
-  /** @type {MessagePort | null} */
-  let hostPort = null;
-  const postToHost = (type, payload) =&gt; {
-    if (hostPort != null) {
-      apply(postHostMessage, hostPort, [{ type, ...payload }]);
-    }
-  };
-  const openExternal = ({ href }) =&gt; {
-    if (globalThis.navigator.userActivation?.isActive === true) {
-      postToHost(&quot;open-external&quot;, { href });
-    }
-  };
-  const sendFollowUpMessage = ({ context, prompt, title }) =&gt; {
-    if (globalThis.navigator.userActivation?.isActive === true) {
-      postToHost(&quot;follow-up&quot;, { context, prompt, title });
-    }
-    return Promise.resolve();
-  };
-  /**
-   * @param {Record&lt;string, unknown&gt; | ((previous: Record&lt;string, unknown&gt; | null) =&gt; Record&lt;string, unknown&gt;)} next
-   * @returns {Promise&lt;void&gt;}
-   */
-  const setWidgetState = async (next) =&gt; {
-    const nextState = typeof next === &quot;function&quot; ? next(state) : next;
-    if (
-      nextState == null ||
-      typeof nextState !== &quot;object&quot; ||
-      isArray(nextState)
-    ) {
-      throw new TypeError(&quot;Widget state must be a JSON object&quot;);
-    }
-    const inputState = stringify(
-      nextState,
-      (_key, /** @type {unknown} */ value) =&gt; {
-        if (
-          typeof value === &quot;undefined&quot; ||
-          typeof value === &quot;function&quot; ||
-          typeof value === &quot;symbol&quot; ||
-          (typeof value === &quot;number&quot; &amp;&amp; !Number.isFinite(value))
-        ) {
-          throw new TypeError(&quot;Widget state must be a JSON object&quot;);
-        }
-        return value;
-      },
-    );
-    const parsedState = parse(inputState);
-    if (
-      parsedState == null ||
-      typeof parsedState !== &quot;object&quot; ||
-      isArray(parsedState)
-    ) {
-      throw new TypeError(&quot;Widget state must be a JSON object&quot;);
-    }
-    const storedState = {
-      modelContent: null,
-      privateContent: null,
-      ...parsedState,
-    };
-    const serializedState = stringify(storedState);
-    if (encode(serializedState).length &gt; 16 * 1024) {
-      throw new TypeError(
-        &quot;Widget state must be a JSON object of at most 16 KiB&quot;,
-      );
-    }
-    if (
-      hasOwn(storedState, &quot;imageIds&quot;) &amp;&amp;
-      (!isArray(storedState.imageIds) ||
-        storedState.imageIds.some(
-          (/** @type {unknown} */ id) =&gt; typeof id !== &quot;string&quot;,
-        ))
-    ) {
-      throw new TypeError(&quot;Widget state imageIds must be an array of strings&quot;);
-    }
-    if (storedState.imageIds?.length &gt; 0) {
-      throw Object.assign(
-        new TypeError(&quot;Visualization state does not support image attachments&quot;),
-        { code: -32602, data: { code: &quot;images_unsupported&quot; } },
-      );
-    }
-    state = storedState;
-    globalThis.openai.widgetState = state;
-    globalThis.dispatchEvent(
-      new CustomEvent(&quot;openai:set_globals&quot;, {
-        detail: { globals: { widgetState: state } },
-      }),
-    );
-    if (statePersistence === &quot;none&quot;) {
-      throw persistenceError();
-    }
-    const id = ++nextStateRequestId;
-    return new Promise((resolve, reject) =&gt; {
-      const timeout = globalThis.setTimeout(() =&gt; {
-        pendingStateWrites.delete(id);
-        reject(persistenceError());
-      }, 30_000);
-      pendingStateWrites.set(id, { resolve, reject, timeout, serializedState });
-      postToHost(&quot;widget-state-write&quot;, { id, state: serializedState });
-    });
-  };
-  const syncTheme = () =&gt; {
-    const theme = mediaQuery.matches ? &quot;dark&quot; : &quot;light&quot;;
-    root.dataset.theme = theme;
-    globalThis.openai = {
-      ...globalThis.openai,
-      openExternal,
-      sendFollowUpMessage,
-      setWidgetState,
-      theme,
-      visualizationStyleVariables: {},
-      visualizationTheme: theme,
-      widgetState: state,
-      statePersistence,
-      stateModelContext: &quot;none&quot;,
-    };
-    globalThis.dispatchEvent(
-      new CustomEvent(&quot;openai:set_globals&quot;, {
-        detail: { globals: globalThis.openai },
-      }),
-    );
-  };
-  const sendHeight = () =&gt; {
-    postToHost(&quot;height&quot;, {
-      height: Math.ceil(
-        Math.max(
-          document.body.scrollHeight,
-          document.body.getBoundingClientRect().height,
-        ),
-      ),
-    });
-  };
-
-  globalThis.addEventListener(
-    &quot;message&quot;,
-    (event) =&gt; {
-      const data = apply(getMessageData, event, []);
-      const ports = apply(getMessagePorts, event, []);
-      const source = apply(getMessageSource, event, []);
-      if (
-        hostPort != null ||
-        source !== parentWindow ||
-        typeof data !== &quot;object&quot; ||
-        data?.type !== &quot;codex-visualization-initialize&quot; ||
-        !isArray(ports) ||
-        ports.length !== 1
-      ) {
-        return;
-      }
-      apply(stopMessagePropagation, event, []);
-      const nextHostPort = ports[0];
-      try {
-        apply(addHostMessageListener, nextHostPort, [
-          &quot;message&quot;,
-          (event) =&gt; {
-            const data = apply(getMessageData, event, []);
-            if (typeof data === &quot;object&quot; &amp;&amp; data?.type === &quot;measure&quot;) {
-              sendHeight();
-            } else if (
-              typeof data === &quot;object&quot; &amp;&amp;
-              data?.type === &quot;widget-state-result&quot;
-            ) {
-              /** @type {unknown} */
-              const id = data.id;
-              if (typeof id !== &quot;number&quot;) {
-                return;
-              }
-              const pending = pendingStateWrites.get(id);
-              if (pending != null) {
-                pendingStateWrites.delete(id);
-                globalThis.clearTimeout(pending.timeout);
-                if (data.ok === true) {
-                  pending.resolve();
-                } else {
-                  pending.reject(persistenceError());
-                }
-              }
-            }
-          },
-        ]);
-        apply(startHostPort, nextHostPort, []);
-      } catch {
-        return;
-      }
-      hostPort = nextHostPort;
-      for (const [id, { serializedState }] of pendingStateWrites) {
-        postToHost(&quot;widget-state-write&quot;, { id, state: serializedState });
-      }
-      sendHeight();
-    },
-    { capture: true },
-  );
-  document.currentScript?.remove();
-  mediaQuery.addEventListener(&quot;change&quot;, syncTheme);
-  globalThis.addEventListener(&quot;click&quot;, (event) =&gt; {
-    if (event.defaultPrevented) {
-      return;
-    }
-    let element = null;
-    if (event.target instanceof globalThis.Element) {
-      element = event.target;
-    } else if (event.target instanceof globalThis.Node) {
-      element = event.target.parentElement;
-    }
-    const link = element?.closest(&quot;a[href]&quot;);
-    const href = link?.getAttribute(&quot;href&quot;);
-    if (href == null) {
-      return;
-    }
-    if (href.startsWith(&quot;#&quot;)) {
-      let id;
-      try {
-        id = decodeURIComponent(href.slice(1));
-      } catch {
-        return;
-      }
-      const target = id.length === 0 ? root : document.getElementById(id);
-      if (
-        target == null ||
-        globalThis.navigator.userActivation?.isActive !== true
-      ) {
-        return;
-      }
-      event.preventDefault();
-      postToHost(&quot;scroll-to&quot;, {
-        top: target.getBoundingClientRect().top + globalThis.scrollY,
-      });
-      return;
-    }
-    event.preventDefault();
-    openExternal({ href });
-  });
-  new ResizeObserver(sendHeight).observe(document.body);
-  syncTheme();
-})();
-&lt;/script&gt;
+&lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27; &#x27;unsafe-eval&#x27; &#x27;wasm-unsafe-eval&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src &#x27;unsafe-inline&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src &#x27;none&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;&quot;&gt;
+&lt;title&gt;Determinantes y rangos · 2.º de Bachillerato&lt;/title&gt;
 &lt;style&gt;:root {
   color-scheme: light dark;
   background-color: var(
@@ -1537,76 +1248,295 @@ svg.lucide {
 }
 
 html&gt;body{padding:0}&lt;/style&gt;
-&lt;style id=&quot;codex-visualization-host-theme&quot;&gt;:root {}&lt;/style&gt;
-&lt;script&gt;
-(() =&gt; {
-  // Host colors are defaults; later authored styles can give the same names
-  // their own meaning (for example, --muted as a chart&#x27;s label color).
-  const hostStyles = document.getElementById(&quot;codex-visualization-host-theme&quot;);
-  const hostStyle = hostStyles.sheet.cssRules[0].style;
-  // Typography, geometry and interaction cursors still follow the host.
-  const styleForProperty = (property) =&gt;
-    /^--(?:font-|radius|corner-shape$|cursor-interaction$|icon-size$|visualize-paint-gutter$)/.test(property)
-      ? document.documentElement.style
-      : hostStyle;
-  const initialGlobals =
-    globalThis.__codexVisualizationInitialGlobals ?? globalThis.openai;
-  delete globalThis.__codexVisualizationInitialGlobals;
-  if (initialGlobals?.statePersistence != null) {
-    globalThis.openai ??= {};
-    globalThis.openai.statePersistence = initialGlobals.statePersistence;
-    globalThis.openai.stateModelContext = initialGlobals.stateModelContext ?? &quot;none&quot;;
-  }
-  if (!true) {
-    return;
-  }
-  let appliedProperties = [];
-  const applyHostStyleVariables = (styleVariables) =&gt; {
-    if (styleVariables == null || typeof styleVariables !== &quot;object&quot;) {
+&lt;/head&gt;
+&lt;body&gt;
+&lt;script type=&quot;application/json&quot; id=&quot;codex-visualization-widget-state&quot;&gt;__CODEX_VISUALIZATION_WIDGET_STATE__&lt;/script&gt;
+&lt;script&gt;(() =&gt; {
+  const root = document.documentElement;
+  const mediaQuery = globalThis.matchMedia(&quot;(prefers-color-scheme: dark)&quot;);
+  const apply = Reflect.apply;
+  const isArray = Array.isArray;
+  const hasOwn = Object.hasOwn;
+  const parentWindow = globalThis.parent;
+  const stringify = JSON.stringify;
+  const parse = JSON.parse;
+  const encode = TextEncoder.prototype.encode.bind(new TextEncoder());
+  const initialStateElement = document.getElementById(
+    &quot;codex-visualization-widget-state&quot;,
+  );
+  const initialGlobals = parse(initialStateElement?.textContent ?? &quot;{}&quot;);
+  initialStateElement?.remove();
+  /** @type {Record&lt;string, unknown&gt; | null} */
+  let state = initialGlobals.widgetState ?? null;
+  const statePersistence = initialGlobals.statePersistence ?? &quot;none&quot;;
+  let nextStateRequestId = 0;
+  /** @type {Map&lt;number, { resolve: () =&gt; void; reject: (error: Error) =&gt; void; timeout: ReturnType&lt;typeof globalThis.setTimeout&gt;; serializedState: string }&gt;} */
+  const pendingStateWrites = new Map();
+  const persistenceError = () =&gt;
+    Object.assign(
+      new Error(&quot;The host could not persist the widget state update&quot;),
+      {
+        code: -32000,
+        data: { code: &quot;widget_state_persistence_failed&quot;, retryable: false },
+      },
+    );
+  /**
+   * @param {object} prototype
+   * @param {string} property
+   */
+  const getPrototypeGetter = (prototype, property) =&gt; {
+    // oxlint-disable-next-line typescript/unbound-method -- invoked through captured Reflect.apply
+    const getter = Object.getOwnPropertyDescriptor(prototype, property)?.get;
+    if (getter == null) {
+      throw new Error(`Missing ${property} getter`);
+    }
+    return getter;
+  };
+  const getMessageData = getPrototypeGetter(MessageEvent.prototype, &quot;data&quot;);
+  const getMessagePorts = getPrototypeGetter(MessageEvent.prototype, &quot;ports&quot;);
+  const getMessageSource = getPrototypeGetter(MessageEvent.prototype, &quot;source&quot;);
+  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
+  const addHostMessageListener = MessagePort.prototype.addEventListener;
+  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
+  const postHostMessage = MessagePort.prototype.postMessage;
+  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
+  const startHostPort = MessagePort.prototype.start;
+  // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
+  const stopMessagePropagation = Event.prototype.stopImmediatePropagation;
+  /** @type {MessagePort | null} */
+  let hostPort = null;
+  const postToHost = (type, payload) =&gt; {
+    if (hostPort != null) {
+      apply(postHostMessage, hostPort, [{ type, ...payload }]);
+    }
+  };
+  const openExternal = ({ href }) =&gt; {
+    if (globalThis.navigator.userActivation?.isActive === true) {
+      postToHost(&quot;open-external&quot;, { href });
+    }
+  };
+  const sendFollowUpMessage = ({ context, prompt, title }) =&gt; {
+    if (globalThis.navigator.userActivation?.isActive === true) {
+      postToHost(&quot;follow-up&quot;, { context, prompt, title });
+    }
+    return Promise.resolve();
+  };
+  /**
+   * @param {Record&lt;string, unknown&gt; | ((previous: Record&lt;string, unknown&gt; | null) =&gt; Record&lt;string, unknown&gt;)} next
+   * @returns {Promise&lt;void&gt;}
+   */
+  const setWidgetState = async (next) =&gt; {
+    const nextState = typeof next === &quot;function&quot; ? next(state) : next;
+    if (
+      nextState == null ||
+      typeof nextState !== &quot;object&quot; ||
+      isArray(nextState)
+    ) {
+      throw new TypeError(&quot;Widget state must be a JSON object&quot;);
+    }
+    const inputState = stringify(
+      nextState,
+      (_key, /** @type {unknown} */ value) =&gt; {
+        if (
+          typeof value === &quot;undefined&quot; ||
+          typeof value === &quot;function&quot; ||
+          typeof value === &quot;symbol&quot; ||
+          (typeof value === &quot;number&quot; &amp;&amp; !Number.isFinite(value))
+        ) {
+          throw new TypeError(&quot;Widget state must be a JSON object&quot;);
+        }
+        return value;
+      },
+    );
+    const parsedState = parse(inputState);
+    if (
+      parsedState == null ||
+      typeof parsedState !== &quot;object&quot; ||
+      isArray(parsedState)
+    ) {
+      throw new TypeError(&quot;Widget state must be a JSON object&quot;);
+    }
+    const storedState = {
+      modelContent: null,
+      privateContent: null,
+      ...parsedState,
+    };
+    const serializedState = stringify(storedState);
+    if (encode(serializedState).length &gt; 16 * 1024) {
+      throw new TypeError(
+        &quot;Widget state must be a JSON object of at most 16 KiB&quot;,
+      );
+    }
+    if (
+      hasOwn(storedState, &quot;imageIds&quot;) &amp;&amp;
+      (!isArray(storedState.imageIds) ||
+        storedState.imageIds.some(
+          (/** @type {unknown} */ id) =&gt; typeof id !== &quot;string&quot;,
+        ))
+    ) {
+      throw new TypeError(&quot;Widget state imageIds must be an array of strings&quot;);
+    }
+    if (storedState.imageIds?.length &gt; 0) {
+      throw Object.assign(
+        new TypeError(&quot;Visualization state does not support image attachments&quot;),
+        { code: -32602, data: { code: &quot;images_unsupported&quot; } },
+      );
+    }
+    state = storedState;
+    globalThis.openai.widgetState = state;
+    globalThis.dispatchEvent(
+      new CustomEvent(&quot;openai:set_globals&quot;, {
+        detail: { globals: { widgetState: state } },
+      }),
+    );
+    if (statePersistence === &quot;none&quot;) {
+      throw persistenceError();
+    }
+    const id = ++nextStateRequestId;
+    return new Promise((resolve, reject) =&gt; {
+      const timeout = globalThis.setTimeout(() =&gt; {
+        pendingStateWrites.delete(id);
+        reject(persistenceError());
+      }, 30_000);
+      pendingStateWrites.set(id, { resolve, reject, timeout, serializedState });
+      postToHost(&quot;widget-state-write&quot;, { id, state: serializedState });
+    });
+  };
+  const syncTheme = () =&gt; {
+    const theme = mediaQuery.matches ? &quot;dark&quot; : &quot;light&quot;;
+    root.dataset.theme = theme;
+    globalThis.openai = {
+      ...globalThis.openai,
+      openExternal,
+      sendFollowUpMessage,
+      setWidgetState,
+      theme,
+      visualizationStyleVariables: {},
+      visualizationTheme: theme,
+      widgetState: state,
+      statePersistence,
+      stateModelContext: &quot;none&quot;,
+    };
+    globalThis.dispatchEvent(
+      new CustomEvent(&quot;openai:set_globals&quot;, {
+        detail: { globals: globalThis.openai },
+      }),
+    );
+  };
+  const sendHeight = () =&gt; {
+    postToHost(&quot;height&quot;, {
+      height: Math.ceil(
+        Math.max(
+          document.body.scrollHeight,
+          document.body.getBoundingClientRect().height,
+        ),
+      ),
+    });
+  };
+
+  globalThis.addEventListener(
+    &quot;message&quot;,
+    (event) =&gt; {
+      const data = apply(getMessageData, event, []);
+      const ports = apply(getMessagePorts, event, []);
+      const source = apply(getMessageSource, event, []);
+      if (
+        hostPort != null ||
+        source !== parentWindow ||
+        typeof data !== &quot;object&quot; ||
+        data?.type !== &quot;codex-visualization-initialize&quot; ||
+        !isArray(ports) ||
+        ports.length !== 1
+      ) {
+        return;
+      }
+      apply(stopMessagePropagation, event, []);
+      const nextHostPort = ports[0];
+      try {
+        apply(addHostMessageListener, nextHostPort, [
+          &quot;message&quot;,
+          (event) =&gt; {
+            const data = apply(getMessageData, event, []);
+            if (typeof data === &quot;object&quot; &amp;&amp; data?.type === &quot;measure&quot;) {
+              sendHeight();
+            } else if (
+              typeof data === &quot;object&quot; &amp;&amp;
+              data?.type === &quot;widget-state-result&quot;
+            ) {
+              /** @type {unknown} */
+              const id = data.id;
+              if (typeof id !== &quot;number&quot;) {
+                return;
+              }
+              const pending = pendingStateWrites.get(id);
+              if (pending != null) {
+                pendingStateWrites.delete(id);
+                globalThis.clearTimeout(pending.timeout);
+                if (data.ok === true) {
+                  pending.resolve();
+                } else {
+                  pending.reject(persistenceError());
+                }
+              }
+            }
+          },
+        ]);
+        apply(startHostPort, nextHostPort, []);
+      } catch {
+        return;
+      }
+      hostPort = nextHostPort;
+      for (const [id, { serializedState }] of pendingStateWrites) {
+        postToHost(&quot;widget-state-write&quot;, { id, state: serializedState });
+      }
+      sendHeight();
+    },
+    { capture: true },
+  );
+  document.currentScript?.remove();
+  mediaQuery.addEventListener(&quot;change&quot;, syncTheme);
+  globalThis.addEventListener(&quot;click&quot;, (event) =&gt; {
+    if (event.defaultPrevented) {
       return;
     }
-    for (const property of appliedProperties) {
-      styleForProperty(property).removeProperty(property);
+    let element = null;
+    if (event.target instanceof globalThis.Element) {
+      element = event.target;
+    } else if (event.target instanceof globalThis.Node) {
+      element = event.target.parentElement;
     }
-    appliedProperties = [];
-    for (const [property, value] of Object.entries(styleVariables)) {
-      if (property.startsWith(&quot;--&quot;) &amp;&amp; typeof value === &quot;string&quot;) {
-        styleForProperty(property).setProperty(property, value);
-        appliedProperties.push(property);
+    const link = element?.closest(&quot;a[href]&quot;);
+    const href = link?.getAttribute(&quot;href&quot;);
+    if (href == null) {
+      return;
+    }
+    if (href.startsWith(&quot;#&quot;)) {
+      let id;
+      try {
+        id = decodeURIComponent(href.slice(1));
+      } catch {
+        return;
       }
-    }
-  };
-
-  const syncHostStyles = (globals) =&gt; {
-    applyHostStyleVariables(globals?.visualizationStyleVariables);
-    const sandboxDocument = globalThis.frameElement?.ownerDocument;
-    if (sandboxDocument != null &amp;&amp; globals?.visualizationTheme != null) {
-      let colorSchemeMeta = sandboxDocument.querySelector(
-        &#x27;meta[name=&quot;color-scheme&quot;]&#x27;,
-      );
-      if (colorSchemeMeta == null) {
-        colorSchemeMeta = sandboxDocument.createElement(&quot;meta&quot;);
-        colorSchemeMeta.name = &quot;color-scheme&quot;;
-        sandboxDocument.head.appendChild(colorSchemeMeta);
+      const target = id.length === 0 ? root : document.getElementById(id);
+      if (
+        target == null ||
+        globalThis.navigator.userActivation?.isActive !== true
+      ) {
+        return;
       }
-      colorSchemeMeta.content = globals.visualizationTheme;
-      sandboxDocument.documentElement.style.colorScheme =
-        globals.visualizationTheme;
-      // Paint the host surface behind transparent saved visualization documents.
-      sandboxDocument.documentElement.style.backgroundColor =
-        hostStyle.getPropertyValue(&quot;--background&quot;);
+      event.preventDefault();
+      postToHost(&quot;scroll-to&quot;, {
+        top: target.getBoundingClientRect().top + globalThis.scrollY,
+      });
+      return;
     }
-  };
-
-  syncHostStyles(initialGlobals);
-  globalThis.addEventListener(&quot;openai:set_globals&quot;, (event) =&gt; {
-    syncHostStyles(event.detail?.globals);
+    event.preventDefault();
+    openExternal({ href });
   });
+  new ResizeObserver(sendHeight).observe(document.body);
+  syncTheme();
 })();
 &lt;/script&gt;
-
-
-
 &lt;style&gt;
 #det-practica .dp-identidad{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:16px}
 #det-practica .dp-logo{display:block;width:160px;max-width:55%;height:auto}
@@ -1671,7 +1601,7 @@ function build(){let q=[], A=randomMatrix(2);q.push({level:1,title:&#x27;El punt
 let questions=[], index=0, records=[], attempts=0, resolved=false;
 const names=[&#x27;&#x27;,&#x27;Cálculo básico&#x27;,&#x27;Propiedades&#x27;,&#x27;Cálculo de orden 3&#x27;,&#x27;Rangos y orden 4&#x27;,&#x27;Parámetros&#x27;];
 function save(){if(window.openai?.setWidgetState)window.openai.setWidgetState({modelContent:{actividad:&#x27;Determinantes 2.º Bachillerato&#x27;,ejercicio:index+1,completados:records.length,aciertosPrimerIntento:records.filter(r=&gt;r.first).length},privateContent:null}).catch(()=&gt;{});}
-function show(){const q=questions[index];attempts=0;resolved=false;$(&#x27;level&#x27;).textContent=&#x27;Nivel &#x27;+q.level+&#x27; · &#x27;+names[q.level];$(&#x27;count&#x27;).textContent=&#x27;Reto &#x27;+(index+1)+&#x27; de 12&#x27;;$(&#x27;title&#x27;).textContent=q.title;$(&#x27;question&#x27;).innerHTML=q.question;$(&#x27;fields&#x27;).innerHTML=q.fields.map((f,i)=&gt;&#x27;&lt;label class=&quot;form-label answer-label&quot; for=&quot;dp-a&#x27;+i+&#x27;&quot;&gt;&#x27;+f.label+&#x27;&lt;input class=&quot;form-control&quot; id=&quot;dp-a&#x27;+i+&#x27;&quot; type=&quot;text&quot; inputmode=&quot;decimal&quot; autocomplete=&quot;off&quot; required&gt;&lt;/label&gt;&#x27;).join(&#x27;&#x27;);$(&#x27;feedback&#x27;).innerHTML=&#x27;&#x27;;$(&#x27;help&#x27;).innerHTML=&#x27;&#x27;;$(&#x27;next&#x27;).hidden=true;$(&#x27;check&#x27;).disabled=false;$(&#x27;hint&#x27;).disabled=false;$(&#x27;solution&#x27;).disabled=false;$(&#x27;progress&#x27;).setAttribute(&#x27;aria-valuenow&#x27;,records.length);$(&#x27;bar&#x27;).style.width=(records.length/12*100)+&#x27;%&#x27;;}
+function show(){const q=questions[index];attempts=0;resolved=false;$(&#x27;level&#x27;).textContent=&#x27;Nivel &#x27;+q.level+&#x27; · &#x27;+names[q.level];$(&#x27;count&#x27;).textContent=&#x27;Reto &#x27;+(index+1)+&#x27; de 12&#x27;;$(&#x27;title&#x27;).textContent=q.title;$(&#x27;question&#x27;).innerHTML=q.question;$(&#x27;fields&#x27;).innerHTML=q.fields.map((f,i)=&gt;&#x27;&lt;label class=&quot;form-label answer-label&quot; for=&quot;dp-a&#x27;+i+&#x27;&quot;&gt;&#x27;+f.label+&#x27;&lt;input class=&quot;form-control&quot; id=&quot;dp-a&#x27;+i+&#x27;&quot; type=&quot;text&quot; inputmode=&quot;text&quot; autocomplete=&quot;off&quot; required&gt;&lt;/label&gt;&#x27;).join(&#x27;&#x27;);$(&#x27;feedback&#x27;).innerHTML=&#x27;&#x27;;$(&#x27;help&#x27;).innerHTML=&#x27;&#x27;;$(&#x27;next&#x27;).hidden=true;$(&#x27;check&#x27;).disabled=false;$(&#x27;hint&#x27;).disabled=false;$(&#x27;solution&#x27;).disabled=false;$(&#x27;progress&#x27;).setAttribute(&#x27;aria-valuenow&#x27;,records.length);$(&#x27;bar&#x27;).style.width=(records.length/12*100)+&#x27;%&#x27;;}
 function finishRecord(first,via){if(resolved)return;resolved=true;records.push({first,via,attempts,title:questions[index].title});$(&#x27;next&#x27;).hidden=false;$(&#x27;next&#x27;).textContent=index===11?&#x27;Ver resultados&#x27;:&#x27;Siguiente reto&#x27;;$(&#x27;check&#x27;).disabled=true;save();}
 function parse(s){s=s.trim().replace(/−/g,&#x27;-&#x27;).replace(&#x27;,&#x27;,&#x27;.&#x27;);if(!/^[+-]?(?:\d+(?:\.\d*)?|\.\d+)(?:\s*\/\s*[+-]?\d+(?:\.\d*)?)?$/.test(s))return NaN;const parts=s.split(&#x27;/&#x27;).map(Number);return parts.length===2&amp;&amp;parts[1]!==0?parts[0]/parts[1]:parts.length===1?parts[0]:NaN;}
 $(&#x27;form&#x27;).addEventListener(&#x27;submit&#x27;,e=&gt;{e.preventDefault();if(resolved)return;const q=questions[index],values=q.fields.map((_,i)=&gt;parse($(&#x27;a&#x27;+i).value));if(values.some(v=&gt;!Number.isFinite(v))){$(&#x27;feedback&#x27;).innerHTML=&#x27;&lt;p role=&quot;alert&quot; class=&quot;text-destructive&quot;&gt;Escribe un número válido en cada campo. También puedes usar fracciones, como −3/2.&lt;/p&gt;&#x27;;return;}attempts++;const ok=values.map((v,i)=&gt;Math.abs(v-q.fields[i].answer)&lt;1e-9);if(ok.every(Boolean)){$(&#x27;feedback&#x27;).textContent=&#x27;¡Correcto! Comprueba también tu razonamiento con la explicación.&#x27;;$(&#x27;help&#x27;).innerHTML=&#x27;&lt;p&gt;&#x27;+q.solution+&#x27;&lt;/p&gt;&#x27;;finishRecord(attempts===1,&#x27;correcto&#x27;);}else{$(&#x27;feedback&#x27;).innerHTML=&#x27;&lt;p role=&quot;alert&quot; class=&quot;text-destructive&quot;&gt;Revisa: &#x27;+q.fields.filter((_,i)=&gt;!ok[i]).map(f=&gt;f.label).join(&#x27;; &#x27;)+&#x27;. Puedes intentarlo otra vez o pedir una pista.&lt;/p&gt;&#x27;;}});
@@ -1685,10 +1615,7 @@ start();
 &lt;/script&gt;
 
 
-&lt;style id=&quot;codex-visualization-document-scrollbar&quot;&gt;html,body{scrollbar-width:none!important}html::-webkit-scrollbar,body::-webkit-scrollbar{display:none!important}&lt;/style&gt;
 
-&lt;script src=&quot;https://unpkg.com/@floating-ui/core@1.7.3/dist/floating-ui.core.umd.min.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;https://unpkg.com/@floating-ui/dom@1.7.4/dist/floating-ui.dom.umd.min.js&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
 (() =&gt; {
   if (window.FloatingUIDOM == null) {
@@ -2256,7 +2183,7 @@ start();
     }
   })();
 &lt;/script&gt;
-&lt;script id=&quot;codex-visualization-lucide&quot; async src=&quot;https://unpkg.com/lucide@1.17.0/dist/umd/lucide.js&quot;&gt;&lt;/script&gt;
+
 &lt;script&gt;
 (() =&gt; {
   const initialize = () =&gt; {
