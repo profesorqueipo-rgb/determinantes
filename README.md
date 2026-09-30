@@ -1,10 +1,12 @@
 # Determinantes y rangos — 2.º de Bachillerato
 
-Actividad interactiva con 12 ejercicios aleatorios de dificultad creciente, pistas, corrección automática y soluciones explicadas.
+Actividad interactiva con 12 ejercicios seleccionados aleatoriamente de una biblioteca de 36 tipos, con dificultad creciente, pistas, corrección automática y soluciones explicadas.
 
 ## Uso
 
-Abre `index.html` en un navegador. Funciona sin conexión y no requiere instalar nada. Cada apertura o pulsación de «Nueva práctica» genera otra tanda de ejercicios.
+Abre `index.html` en un navegador. Funciona sin conexión y no requiere instalar nada. Cada apertura o pulsación de «Nueva práctica» selecciona otros tipos de retos y genera números nuevos. En una misma tanda no se repite un tipo de ejercicio.
+
+La práctica conserva cinco niveles: cálculo básico; propiedades (linealidad, productos, inversas y potencias); cálculo de orden 3 y cofactores; rangos y determinantes de orden 4; problemas con parámetros. Los últimos retos pueden incluir una raíz simple, dos valores excepcionales, una raíz doble, determinantes siempre nulos, existencia de inversa o búsqueda de un determinante prefijado.
 
 ## Publicación en GitHub Pages
 
